@@ -83,3 +83,14 @@ class Trie:
                 return False
             curr = curr.children[char]
         return True
+
+
+# TEST CASES
+word = "apple"
+obj = Trie()
+obj.add(word)
+param_2 = obj.search(word)
+prefix = "ap"
+param_3 = obj.starts_with(prefix)
+print(param_2, param_3)
+# Output: True True
